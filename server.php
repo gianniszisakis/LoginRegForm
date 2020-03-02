@@ -66,5 +66,17 @@ else{
 
 	}
 }
+
+/* Show the table results */
+$query = "SELECT * FROM mobile";
+$results = $mysqli ->query($query);
+
+echo "<div class='container'><h2>Daily Report</h2><table class='table table-hover'><thead><tr><th>date</th><th>p2p</th><th>portin</th><th>data</th><th>business</th><th>total</th></tr></thead>";
+while($row = $results->fetch_assoc()){
+echo "<tr><td>".$row["date"]."</td><td>".$row["p2p"]."</td><td>".$row["portin"]."</td><td>".$row["data"]."</td><td>".$row["business"]."</td><td>".$row["total"]."</td>";
+}
+echo "</table>";
+/*end of table results code */
+
 ?>
 
