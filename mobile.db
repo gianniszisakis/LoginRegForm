@@ -1,0 +1,13 @@
+CREATE TABLE `mobile` (
+	`id` INT(100) NOT NULL DEFAULT 0,
+	`date` DATE NOT NULL,
+	`p2p` INT(100) NULL DEFAULT NULL,
+	`portin` INT(100) NULL DEFAULT NULL,
+	`data` INT(100) NULL DEFAULT NULL,
+	`business` INT(100) NULL DEFAULT NULL,
+	`total` FLOAT NOT NULL DEFAULT 0,
+	PRIMARY KEY (`id`)
+)
+COLLATE='utf8mb4_general_ci'
+ENGINE=InnoDB
+;
